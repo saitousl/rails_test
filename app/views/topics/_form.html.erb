@@ -1,0 +1,11 @@
+<%= form_with(model: topic, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :投稿内容 %>
+    <%= form.text_field :title, id: :topic_title %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
